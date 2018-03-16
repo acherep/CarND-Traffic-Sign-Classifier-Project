@@ -116,7 +116,7 @@ The first image might be difficult to classify because it is rotated and there i
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------|:---------------------------------------------| 
 | Speed Limit 50 (dark, rotated)     	| Speed limit (60km/h)			| 
 | Speed Limit 100      		| Speed Limit 100   									| 
 | No passing     			| No passing 										|
@@ -133,7 +133,7 @@ The model is not supposed to classify the first and the last images correctly. M
 For the first image, which is rotated "Speed Limit 50km/h", the model is sure that this is a "Speed Limit 60km/h" (probability of 0.985), which is wrong. The top five soft max probabilities are
 
 | Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------|:---------------------------------------------| 
 | .985         			| Speed Limit 60km/h   									| 
 | .006   				| End of all speed and passing limit					|
 | .004					| Speed limit (70km/h)											|
@@ -145,7 +145,7 @@ For the first image, which is rotated "Speed Limit 50km/h", the model is sure th
 For the second image, the model correctly classifies that this is a "Speed limit (100km/h)" sign (probability of .999999166). The top five soft max probabilities are
 
 | Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------:|:---------------------------------------------| 
 | .999999166         			| Speed limit (100km/h)   									| 
 | 8 * 10^(-7)  	| Speed limit (120km/h) 										|
 | 1 * 10^(-9)					| Speed limit (50km/h)											|
@@ -157,7 +157,7 @@ For the second image, the model correctly classifies that this is a "Speed limit
 For the third image, the model correctly classifies that this is a "No passing" sign (probability of almost 1). The top five soft max probabilities are
 
 | Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------:|:---------------------------------------------| 
 | 1.        			| No passing   									| 
 | 1 * 10^(-20)   	| Speed limit (120km/h) 										|
 | 5 * 10^(-21)					| Speed limit (50km/h)											|
@@ -169,7 +169,7 @@ For the third image, the model correctly classifies that this is a "No passing" 
 For the fourth image, the model is sure that this is a "Right-of-way at the next intersection" sign (probability of almost 1). The top five soft max probabilities are
 
 | Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------:|:---------------------------------------------| 
 | 1.           			| Right-of-way at the next intersection   									| 
 | 9 * 10^(-14)   	| Beware of ice/snow										|
 | 2 * 10^(-23)					| Double curve											|
@@ -181,7 +181,7 @@ For the fourth image, the model is sure that this is a "Right-of-way at the next
 For the fifth image, the model is relatively sure that this is a yield sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities are
 
 | Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------:|:---------------------------------------------| 
 | 1.         			| Yield   									| 
 | 1 * 10^(-27)   	| Children crossing 										|
 | 6 * 10^(-30)					| No passing											|
@@ -193,7 +193,7 @@ For the fifth image, the model is relatively sure that this is a yield sign (pro
 For the sixth image, the model is relatively sure that this is a ahead only sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities are
 
 | Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------:|:---------------------------------------------| 
 | 1.         			| Ahead only   									| 
 | 7 * 10^(-18)   	| Turn right ahead 										|
 | 2 * 10^(-18)					| Roundabout mandatory											|
@@ -205,7 +205,7 @@ For the sixth image, the model is relatively sure that this is a ahead only sign
 For the seventh image, the model is sure that this is a bumpy road sign (probability of 0.999), but the image contains a sign that is not present in the data set (a traffic jam sign). The top five soft max probabilities are
 
 | Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
+|:---------------------:|:---------------------------------------------| 
 | .999         			| Bumpy road   									| 
 | 3 * 10^(-4)      				| Bicycles crossing 										|
 | 3 * 10^(-5) 					| Road work											|
