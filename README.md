@@ -87,15 +87,15 @@ My final model reproduces the standard *LeNet* configuration taking into account
 
 ### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I use *Adam Optimizer* provided by *TensorFlow*. The batch size is set to $128$. The learning rate is $0.001$.The number of epochs is $10$. The initial weighs of convolutional and fully connected layers are chosen based on a truncated normal distribution with mean $0$ and standard deviation $0.1$. The difference to the normal distribution is in re-picking those generated values that are more than 2 standard deviations away from the mean.
+To train the model, I use *Adam Optimizer* provided by *TensorFlow*. The batch size is set to 128. The learning rate is 0.001. The number of epochs is 10. The initial weighs of convolutional and fully connected layers are chosen based on a truncated normal distribution with mean 0 and standard deviation 0.1. The difference to the normal distribution is in re-picking those generated values that are more than 2 standard deviations away from the mean.
 
 ### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93.
 
 
 The standard *LeNet* configuration is chosen that performs well on recognizing patterns on the images. The model results are:
-* training set accuracy of $100%$,
-* validation set accuracy of $94.5%$,
-* test set accuracy of $93.9%$.
+* training set accuracy of 100%,
+* validation set accuracy of 94.5%,
+* test set accuracy of 93.9%.
 
 The final model's accuracy shows that the model works well.
 
@@ -126,7 +126,7 @@ Here are the results of the prediction:
 | Traffic jam (not in the data set)			| Bumpy road      							|
 
 
-The model is not supposed to classify the first and the last images correctly. Moreover, the first image rotated properly is classified accurately. Therefore, the model correctly guesses all remaining traffic signs that gives an accuracy of $100%$. I cannot compare the accuracy based on 5 images to the accuracy on the test data set of $92%$. For this I need to classify more images.
+The model is not supposed to classify the first and the last images correctly. Moreover, the first image rotated properly is classified accurately. Therefore, the model correctly guesses all remaining traffic signs that gives an accuracy of 100%. I cannot compare the accuracy based on 5 images to the accuracy on the test data set of 92%. For this I need to classify more images.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
@@ -147,10 +147,10 @@ For the second image, the model correctly classifies that this is a "Speed limit
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .999999166         			| Speed limit (100km/h)   									| 
-| $8\cdot10^{-7}$   	| Speed limit (120km/h) 										|
-| $1\cdot10^{-9}$					| Speed limit (50km/h)											|
-| $4\cdot10^{-10}$	      			| Speed limit (80km/h)					 				|
-| $2\cdot10^{-10}$				    | Roundabout mandatory      							|
+| 8 * 10^(-7)  	| Speed limit (120km/h) 										|
+| 1 * 10^(-9)					| Speed limit (50km/h)											|
+| 4 * 10^(-10)	      			| Speed limit (80km/h)					 				|
+| 2 * 10^(-10)				    | Roundabout mandatory      							|
 
 ![alt text][bar_chart_1]
 
@@ -159,10 +159,10 @@ For the third image, the model correctly classifies that this is a "No passing" 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.        			| No passing   									| 
-| $1\cdot10^{-20}$   	| Speed limit (120km/h) 										|
-| $5\cdot10^{-21}$					| Speed limit (50km/h)											|
-| $1\cdot10^{-21}$	      			| Speed limit (80km/h)					 				|
-| $5\cdot10^{-22}$				    | Roundabout mandatory      							|
+| 1 * 10^(-20)   	| Speed limit (120km/h) 										|
+| 5 * 10^(-21)					| Speed limit (50km/h)											|
+| 1 * 10^(-21}	      			| Speed limit (80km/h)					 				|
+| 5 * 10^(-22}				    | Roundabout mandatory      							|
 
 ![alt text][bar_chart_2]
 
@@ -171,10 +171,10 @@ For the fourth image, the model is sure that this is a "Right-of-way at the next
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.           			| Right-of-way at the next intersection   									| 
-| $9\cdot10^{-14}$   	| Beware of ice/snow										|
-| $2\cdot10^{-23}$					| Double curve											|
-| $4\cdot10^{-25}$	      			| Pedestrians					 				|
-| $9\cdot10^{-27}$				    | Turn left ahead     							|
+| 9 * 10^(-14)   	| Beware of ice/snow										|
+| 2 * 10^(-23)					| Double curve											|
+| 4 * 10^(-25)	      			| Pedestrians					 				|
+| 9 * 10^(-27)				    | Turn left ahead     							|
 
 ![alt text][bar_chart_3]
 
@@ -183,10 +183,10 @@ For the fifth image, the model is relatively sure that this is a yield sign (pro
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.         			| Yield   									| 
-| $1\cdot10^{-27}$   	| Children crossing 										|
-| $6\cdot10^{-30}$					| No passing											|
-| $7\cdot10^{-32}$	      			| No vehicles					 				|
-| $3\cdot10^{-33}$				    | Speed limit (60km/h)      							|
+| 1 * 10^(-27)   	| Children crossing 										|
+| 6 * 10^(-30)					| No passing											|
+| 7 * 10^(-32)	      			| No vehicles					 				|
+| 3 * 10^(-33)				    | Speed limit (60km/h)      							|
 
 ![alt text][bar_chart_4]
 
@@ -195,10 +195,10 @@ For the sixth image, the model is relatively sure that this is a ahead only sign
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.         			| Ahead only   									| 
-| $7\cdot10^{-18}$   	| Turn right ahead 										|
-| $2\cdot10^{-18}$					| Roundabout mandatory											|
-| $5\cdot10^{-19}$	      			| Go straight or right					 				|
-| $3\cdot10^{-19}$				    | Turn left ahead      							|
+| 7 * 10^(-18)   	| Turn right ahead 										|
+| 2 * 10^(-18)					| Roundabout mandatory											|
+| 5 * 10^(-19)	      			| Go straight or right					 				|
+| 3 * 10^(-19)				    | Turn left ahead      							|
 
 ![alt text][bar_chart_5]
 
@@ -207,10 +207,10 @@ For the seventh image, the model is sure that this is a bumpy road sign (probabi
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .999         			| Bumpy road   									| 
-| $3\cdot10^{-4}$      				| Bicycles crossing 										|
-| $3\cdot10^{-5}$ 					| Road work											|
-| $2\cdot10^{-6}$ 	      			| Beware of ice/snow					 				|
-| $5\cdot10^{-7}$ 				    | Slippery Road      							|
+| 3 * 10^(-4)      				| Bicycles crossing 										|
+| 3 * 10^(-5) 					| Road work											|
+| 2 * 10^(-6) 	      			| Beware of ice/snow					 				|
+| 5 * 10^(-7) 				    | Slippery Road      							|
 
 ![alt text][bar_chart_6]
 
