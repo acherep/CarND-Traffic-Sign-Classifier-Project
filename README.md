@@ -26,8 +26,8 @@ The goals / steps of this project are the following:
 [bar_chart_4]: ./figures/bar_chart_4.png "Bar Chart for Yield"
 [bar_chart_5]: ./figures/bar_chart_5.png "Bar Chart for Ahead only"
 [bar_chart_6]: ./figures/bar_chart_6.png "Bar Chart for Traffic Jam"
-[feature_maps_limit_50]: ./figures/speed_limit_50_visualization_output_conv1.png "Feature maps at conv1 for 'Speed Limit 50' rotated"
-[feature_maps_ahead_only]: ./figures/ahead_only_visualization_output_conv1.png "Feature maps at conv1 for 'Ahead only'"
+[feature_maps_limit_50]: ./figures/speed_limit_50_visualization.png "Feature maps at conv1 for 'Speed Limit 50' rotated"
+[feature_maps_ahead_only]: ./figures/ahead_only_visualization.png "Feature maps at conv1 for 'Ahead only'"
 
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
