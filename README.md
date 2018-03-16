@@ -38,10 +38,6 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
-## Rubric Points
-Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
-
-
 ### Data Set Summary & Exploration
 
 #### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
@@ -143,6 +139,7 @@ For the first image, which is rotated "Speed Limit 50km/h", the model is sure th
 | .004					| Speed limit (70km/h)											|
 | .003	      			| Speed limit (80km/h)					 				|
 | .002				    | Keep right     							|
+
 ![alt text][bar_chart_0]
 
 For the second image, the model correctly classifies that this is a "Speed limit (100km/h)" sign (probability of .999999166). The top five soft max probabilities are
@@ -178,6 +175,7 @@ For the fourth image, the model is sure that this is a "Right-of-way at the next
 | $2\cdot10^{-23}$					| Double curve											|
 | $4\cdot10^{-25}$	      			| Pedestrians					 				|
 | $9\cdot10^{-27}$				    | Turn left ahead     							|
+
 ![alt text][bar_chart_3]
 
 For the fifth image, the model is relatively sure that this is a yield sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities are
@@ -189,6 +187,7 @@ For the fifth image, the model is relatively sure that this is a yield sign (pro
 | $6\cdot10^{-30}$					| No passing											|
 | $7\cdot10^{-32}$	      			| No vehicles					 				|
 | $3\cdot10^{-33}$				    | Speed limit (60km/h)      							|
+
 ![alt text][bar_chart_4]
 
 For the sixth image, the model is relatively sure that this is a ahead only sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities are
@@ -200,6 +199,7 @@ For the sixth image, the model is relatively sure that this is a ahead only sign
 | $2\cdot10^{-18}$					| Roundabout mandatory											|
 | $5\cdot10^{-19}$	      			| Go straight or right					 				|
 | $3\cdot10^{-19}$				    | Turn left ahead      							|
+
 ![alt text][bar_chart_5]
 
 For the seventh image, the model is sure that this is a bumpy road sign (probability of 0.999), but the image contains a sign that is not present in the data set (a traffic jam sign). The top five soft max probabilities are
@@ -211,6 +211,7 @@ For the seventh image, the model is sure that this is a bumpy road sign (probabi
 | $3\cdot10^{-5}$ 					| Road work											|
 | $2\cdot10^{-6}$ 	      			| Beware of ice/snow					 				|
 | $5\cdot10^{-7}$ 				    | Slippery Road      							|
+
 ![alt text][bar_chart_6]
 
 
